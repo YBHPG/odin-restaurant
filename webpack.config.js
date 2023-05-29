@@ -4,8 +4,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        home: './src/home/home.js',
+        menu: './src/menu/menu.js',
+        contacts: './src/contacts/contacts.js',
+    },
     devtool: 'inline-source-map',
+    devServer: {
+        static: './dist,'
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Restaurant',
@@ -24,8 +32,11 @@ module.exports = {
         ],
     },
     output: {
-        filename: 'main.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
+    },
+    optimization: {
+        runtimeChunk: 'single',
     },
 };

@@ -1,23 +1,52 @@
-import ruskiImage from './ruski.jpg';
+import indexCSS from './index.css';
+import renderHome from './home/home';
+import renderMenu from './menu/menu';
+import renderContacts from './contacts/contacts';
 
-function createContent() {
+function indexRender() {
+    const header = document.createElement('header');
+
     const contentDiv = document.createElement('div');
     contentDiv.setAttribute('id', 'content');
-    
-    const headerImage = new Image;
-    headerImage.src = ruskiImage;
 
-    const headline = document.createElement('h1');
-    headline.textContent = 'Indulge in Exquisite Flavors at Our Award-Winning Restaurant';
+    const headerList = document.createElement('ul');
+    headerList.classList.add('header-list');
 
-    const review = document.createElement('p');
-    review.textContent = '"Ruski" is a one-of-a-kind restaurant that offers guests an authentic taste of Russian cuisine in an elegant setting. The restaurant\'s menu features traditional Russian dishes made with fresh locally sourced ingredients, such as hearty stews, tender meats, and flavorful vegetable dishes. The presentation of the dishes is a work of art in itself, and each plate is beautifully crafted with careful attention paid to every detail.';
+    const homeButton = document.createElement('li');
+    homeButton.textContent = 'Home';
+    homeButton.classList.add('header-list-button');
+    homeButton.setAttribute('id', 'home');
+    homeButton.addEventListener("click", clickHandler);
 
-    contentDiv.appendChild(headerImage);
-    contentDiv.appendChild(headline);
-    contentDiv.appendChild(review);
+    const menuButton = document.createElement('li');
+    menuButton.textContent = 'Menu';
+    menuButton.classList.add('header-list-button');
+    menuButton.setAttribute('id', 'menu');
+    menuButton.onclick = clickHandler;
+
+    const contactsButton = document.createElement('li');
+    contactsButton.textContent = 'Contacts';
+    contactsButton.classList.add('header-list-button');
+    contactsButton.setAttribute('id', 'contacts');
+    contactsButton.onclick = clickHandler;
+
+    headerList.append(homeButton, menuButton, contactsButton);
+    header.appendChild(headerList);
+
+    document.body.appendChild(header);
 
     document.body.appendChild(contentDiv);
-}
+};
 
-window.onload = createContent();
+function clickHandler() {
+    let entryPoint = event.currentTarget.id;
+    if (entryPoint === 'home') {
+        renderHome();
+    } else if (entryPoint === 'menu') {
+        renderMenu();
+    } else if (entryPoint === 'contacts') {
+        renderContacts();
+    }
+};
+
+window.onload = indexRender();
