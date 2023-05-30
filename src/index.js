@@ -36,6 +36,7 @@ function indexRender() {
     document.body.appendChild(header);
 
     document.body.appendChild(contentDiv);
+    renderMenu();
 };
 
 function clickHandler() {

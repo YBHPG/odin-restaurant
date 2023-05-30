@@ -1,0 +1,27 @@
+{
+    "Echpochmak": {
+        "name": "Echpochmak",
+        "description": "Echpochmak used to be a traditional food of nomads: people would put raw meat stuffing into a triangle-shaped pastry and pour hot broth through a special hole, so it became a real hot dish. Nowadays, echpochmak is considered to be a trademark of the Republic of Tatarstan.",
+        "price": "10$"
+    },
+    "Sbiten": {
+        "name": "Sbiten",
+        "description": "Before the Russians discovered tea, sbiten was the main drink to warm up during the cold season. Honey was dissolved in boiling water with herbs (mint, sage, etc.) and spices (cardamom, cloves, cinnamon). Sbiten is especially tasty with pryaniki (gingerbread) and homemade cookies.",
+        "price": "5$"
+    },
+    "Chudu": {
+        "name": "Chudu",
+        "description": "In Dagestan, chudus are as popular as chebureks on Black Sea coast. It's a thin or puffy flatbread with meat or vegetable fillings, cooked in a dry pan and smeared with butter or oil.",
+        "price": "15$"
+    },
+    "Okroshka": {
+        "name": "Okroshka",
+        "description": "Recipes for okroshka can be found in cookbooks since the late 18th century. Classic okroshka is made with finely chopped vegetables, meat and herbs with white kvass (not sweet). Later, a number of alternatives to kvass appeared - mineral water, kefir, ayran and other dairy products.",
+        "price": "15$"
+    },
+    "Kalitki": {
+        "name": "Kalitki",
+        "description": "This traditional dish of Karelian and North-Russian cuisine got its name after a small purse in Old Russian ('kalita'), which it resembles in shape. The fillings for kalitki, essentially pies made of unleavened rye dough, can be very different: cereals, mashed potatoes, berries, etc.",
+        "price": "15$"
+    }
+}
