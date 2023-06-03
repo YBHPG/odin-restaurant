@@ -5,20 +5,18 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack serve --open"
+    "dev": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "favicons-webpack-plugin": "^6.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.1",
     "json-loader": "^0.5.7",
     "style-loader": "^3.3.3",
     "webpack": "^5.84.1",
     "webpack-cli": "^5.1.1"
-  },
-  "dependencies": {
-    "webpack-dev-server": "^4.15.0"
   }
 }
