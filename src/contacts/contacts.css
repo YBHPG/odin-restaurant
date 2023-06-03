@@ -1,0 +1,23 @@
+.contacts {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.text-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts-image {
+    width: 50%;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+
+.contacts-header {
+    text-align: left;
+}
