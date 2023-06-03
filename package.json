@@ -1,17 +1,23 @@
 {
   "name": "odin-restaurant",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/YBHPG/odin-restaurant.git"
+  },
   "description": "A project work to try out new knowledge of how to generate a full page dynamically using only JavaScript",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --watch"
+    "dev": "webpack --watch",
+    "build": "webpack --mode='development'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",
     "favicons-webpack-plugin": "^6.0.0",
+    "gh-pages": "^5.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.1",
     "json-loader": "^0.5.7",
